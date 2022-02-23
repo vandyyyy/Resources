@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+    <!--Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="resource" style="background: #cfedfb">
+    <!-- Navbar Section -->
+
+    <nav class="navbar navbar-light mx-5">
+      <div class="container-fluid mt-3">
+        <div class="dropdown dropdown-mobile">
+          <button
+            class="btn btn-secondary"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="./index.html">Home</a>
+            <a class="dropdown-item" href="./resource.html">Resources</a>
+            <a class="dropdown-item" href="./writeUp.html">Notes/a>
+            <a class="dropdown-item" href="./FunFacts.html">Facts</a>
+            <a class="dropdown-item" href="./summary.html">summary</a>
+          </div>
+        </div>
+        <a href="./homepage.html" class="navbar-brand">
+          <h3>Resources</h3>
+        </a>
+        <ul class="d-flex">
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link rounded-pill bg-round active"
+              href="./resource.html"
+              >Resources</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="./writeUp.html">notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="./FunFacts.html">Facts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="./summary.html">Summary</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div>
+      <img
+        class="img-bg"
+        height="100%"
+        src="books.jpeg"
+        alt="."
+      />
+    </div>
+
+    <div class="container-fluid my-3" id="resourceContainer">
+      <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-6 m-3 mx-4">
+        <h4 id="categoryText">Subjects</h4>
+        <hr />
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="category">
+            <button class="link-dark btn-style">data Science</button>
+            <div class="select-option">
+              <button
+                class="btn select-category-btn text-start"
+                value="Classical Physics"
+              >
+                beginner
+              </button>
+              <button
+                class="btn select-category-btn text-start"
+                value="Quantum Physics"
+              >
+                advanced
+              </button>
+            </div>
+          </li>
+          <li class="category">
+            <button class="link-dark btn-style">Machine learning</button>
+            <div class="select-option">
+              <button
+                class="btn select-category-btn text-start"
+                value="Organic"
+              >
+              beginner
+              </button>
+              <button
+                class="btn select-category-btn text-start"
+                value="Inorganic"
+              >
+                intermidiate
+              </button>
+              <button
+                class="btn select-category-btn text-start text-start"
+                value="Physical"
+              >
+              advanced
+              </button>
+            </div>
+          </li>
+          <li class="category">
+            <button class="link-dark btn-style">Android Development</button>
+            <div class="select-option">
+              <button
+                class="btn select-category-btn text-start text-start"
+                value="Physiology"
+              >
+              beginner
+              </button>
+              <button
+                class="btn select-category-btn text-start text-start"
+                value="Botany"
+              >
+              intermidiate
+              </button>
+              <button
+                class="btn select-category-btn text-start text-start"
+                value="Environment"
+              >
+              advanced
+              </button>
+            </div>
+          </li>
+          <li class="category">
+            <button class="link-dark btn-style">Web Development</button>
+            <div class="select-option">
+              <button
+                class="btn select-category-btn text-start"
+                value="Algebra"
+              >
+              beginner
+              </button>
+              <button
+                class="btn select-category-btn text-start"
+                value="Geometry"
+              >
+              intermidiate
+              </button>
+              <button
+                class="btn select-category-btn text-start"
+                value="Calculus"
+              >
+              advanced
+              </button>
+            </div>
+          </li>
+          <li class="category">
+            <button class="link-dark btn-style">BlockChain</button>
+            <div class="select-option">
+              <button
+                class="btn select-category-btn text-start"
+                value="History"
+              >
+              beginner
+              </button>
+              <button
+                class="btn select-category-btn text-start"
+                value="Geography"
+              >
+              intermidiate
+              </button>
+              <button
+                class="btn select-category-btn text-start"
+                value="Political Science"
+              >
+              advanced
+              </button>
+            </div>
+          </li>
+          <li class="category">
+            <button class="link-dark btn-style">competitive Programming</button>
+            <div class="select-option">
+              <button
+                class="btn select-category-btn text-start"
+                value="Literature"
+              >
+              beginner
+              </button>
+              <button
+                class="btn select-category-btn text-start"
+                value="Grammar"
+              >
+              intermidiate
+              </button>
+              <button
+                class="btn select-category-btn text-start"
+                value="Leaders Speak"
+              >
+              advanced
+              </button>
+            </div>
+          </li>
+        </ul>
+        <hr />
+      </div>
+      <!-- Sidebar Ends -->
+      <!-- Cards-section starts -->
+      <div class="card-section container">
+        <div id="card-add" class="d-flex flex-wrap"></div>
+      </div>
+      <!-- Cards-section ends -->
+    </div>
+
+    <script src="index.js"></script>
+    <script src="card.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resources</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    
+    
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #boxBorder {
+        width: fit-content;
+        height: fit-content;
+      }
+      input[type='text']::placeholder {
+        /* Firefox, Chrome, Opera */
+        text-align: center;
+
+      }
+      textarea::placeholder {
+        text-align: center;
+        color: rgb(40, 105, 131);
+      }
+      div {
+        color:rgb(40, 105, 131);
+      }
+    </style>
+  </head>
+  <body id="resource" style="background: rgb(40, 105, 131)">
+    <!-- Navbar Section -->
+
+    <nav class="navbar navbar-light mx-5">
+      <div class="container-fluid mt-3">
+        <div class="dropdown dropdown-mobile">
+          <button
+            class="btn btn-secondary"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="./index.html">Home</a>
+            <a class="dropdown-item" href="./resource.html">Resources</a>
+            <a class="dropdown-item" href="./writeUp.html">Notes</a>
+            <a class="dropdown-item" href="./FunFacts.html">Facts</a>
+            <a class="dropdown-item" href="./summary.html">summary</a>
+          </div>
+        </div>
+        <a href="./homepage.html" class="navbar-brand">
+          <h3>Resources</h3>
+        </a>
+        <ul class="d-flex">
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="./resource.html"
+              >Resources</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill bg-round" href="./writeUp.html"
+              >Notes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="./FunFacts.html">Facts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="./summary.html">Summary</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <img
+        class="img-bg"
+        height="100%"
+        src="books.jpeg"
+        alt="."
+      />
+    </div>
+    <div id="invoice">
+      <h1 class="text-center" >Notes</h1>
+      <p class="text-center">own notes are the best way to study</p>
+      <div class="d-flex justify-content-center">
+        <div class="d-flex flex-column align-items-center">
+          <input
+            class="d-block my-3"
+            type="text"
+            id="title"
+            placeholder="Enter Title"
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Enter VALID TEXT"
+          ></textarea>
+          <a href="#boxBorder"
+            ><button
+              class="btn btn-secondary my-3"
+              id="downloadBtn"
+              onclick="func()"
+            >
+              Download
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div id="boxBorder"><div id="box"></div></div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
